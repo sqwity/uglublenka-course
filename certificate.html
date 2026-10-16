@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1728">
+  <title>Сертификат об окончании курса — Углублённый курс</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="container top-bar-inner">
+      <a href="index.html" class="top-bar-logo">
+        <span class="top-bar-logo-icon">📈</span>
+        <span>Углублённый курс</span>
+      </a>
+      <div class="top-bar-actions">
+        <span class="top-bar-progress" id="topBarProgress">0/10</span>
+        <button class="theme-toggle" type="button" aria-label="Переключить тему">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-narrow">
+
+    <div class="lesson-nav-top">
+      <a href="index.html">← К урокам</a>
+      <span class="lesson-counter">Сертификат</span>
+      <a href="#" style="visibility:hidden">·</a>
+    </div>
+
+    <!-- Обёртка сертификата -->
+    <div id="certificateWrap" class="certificate-wrap">
+
+      <!-- Содержимое сертификата -->
+      <div class="certificate">
+        <div class="certificate-label">Сертификат об окончании</div>
+
+        <h1>Углублённый курс для новичков</h1>
+
+        <p class="certificate-subtitle">
+          Настоящим подтверждается, что
+        </p>
+
+        <div class="certificate-name" id="certName">Студент</div>
+
+        <p class="certificate-text">
+          успешно прошёл(ла) полный курс из <b>10 уроков</b> по основам трейдинга:
+          японские свечи, уровни поддержки и сопротивления, тренды, таймфреймы,
+          индикаторы, работа на бирже FxPro (шорт и лонг), управление рисками
+          и психология трейдинга.
+        </p>
+
+        <div class="certificate-footer">
+          <div class="certificate-signature">
+            <strong>Углублённый курс</strong>
+            Образовательная платформа
+          </div>
+          <div class="certificate-date">
+            <strong id="certDate">—</strong>
+            Дата выдачи
+          </div>
+        </div>
+      </div>
+
+      <!-- Кнопки -->
+      <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
+        <button type="button" class="btn btn-gold" onclick="window.print()">
+          🖨️ Распечатать / Сохранить в PDF
+        </button>
+        <button type="button" class="btn btn-primary" id="changeNameBtn">
+          ✏️ Изменить имя
+        </button>
+        <a href="index.html" class="btn btn-success">
+          ← Вернуться к урокам
+        </a>
+      </div>
+
+      <p style="margin-top:24px;font-size:12px;color:var(--muted)">
+        💡 Совет: чтобы сохранить сертификат в PDF — нажмите «Распечатать»
+        и выберите «Сохранить как PDF» в окне печати.
+      </p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p style="margin:0 0 6px"><b>Углублённый курс для новичков</b> · Учебный мини-сайт</p>
+      <p style="margin:0;font-size:11px;opacity:.75">Материал предназначен для образовательных целей и не является инвестиционной рекомендацией.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" type="button" aria-label="Наверх">↑</button>
+
+  <script>
+    // Кнопка "Изменить имя"
+    document.getElementById("changeNameBtn")?.addEventListener("click", () => {
+      const currentName = localStorage.getItem("advanced-course-username-v1");
+      const newName = prompt(
+        "Введите ваше имя (для сертификата):",
+        currentName || ""
+      );
+      if (newName !== null) {
+        localStorage.setItem(
+          "advanced-course-username-v1",
+          JSON.stringify(newName.trim().substring(0, 40) || "Студент")
+        );
+        location.reload();
+      }
+    });
+  </script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

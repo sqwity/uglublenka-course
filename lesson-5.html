@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1728">
+  <title>Урок 5. Таймфреймы — Углублённый курс</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-lesson-number="5">
+
+  <header class="top-bar">
+    <div class="container top-bar-inner">
+      <a href="index.html" class="top-bar-logo">
+        <span class="top-bar-logo-icon">📈</span>
+        <span>Углублённый курс</span>
+      </a>
+      <div class="top-bar-actions">
+        <span class="top-bar-progress" id="topBarProgress">0/10</span>
+        <button class="theme-toggle" type="button" aria-label="Переключить тему">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-narrow">
+
+    <div class="lesson-nav-top">
+      <a href="lesson-4.html">← Урок 4</a>
+      <span class="lesson-counter">Урок 5 из 10</span>
+      <a href="lesson-6.html" class="next">Далее →</a>
+    </div>
+
+    <div class="lesson-header">
+      <div class="lesson-header-icon">⏱️</div>
+      <h1>Таймфреймы</h1>
+      <p>Какие бывают, как выбирать под свой стиль и зачем нужен мультитаймфреймовый анализ.</p>
+    </div>
+
+    <article class="lesson-content-card">
+
+      <h2>Что такое таймфрейм</h2>
+      <p>
+        <b>Таймфрейм (ТФ)</b> — это временной интервал, который показывает одна свеча
+        на графике. Если выбран таймфрейм 1 час — каждая свеча покажет движение цены
+        за 1 час. Если 1 день — за 1 день.
+      </p>
+
+      <h2>Основные таймфреймы</h2>
+      <ul>
+        <li><b>M1, M5, M15, M30</b> — минутные. Для скальпинга.</li>
+        <li><b>H1, H4</b> — часовые. Для дневной торговли и свинга.</li>
+        <li><b>D1</b> — дневной. Для свинг-трейдинга.</li>
+        <li><b>W1, MN</b> — недельный и месячный. Для долгосрочного анализа и инвестиций.</li>
+      </ul>
+
+      <h2>Как выбрать таймфрейм</h2>
+      <p>Таймфрейм зависит от вашего стиля торговли и от того, сколько времени вы готовы проводить у графика.</p>
+
+      <ul>
+        <li><b>Скальпер</b> — M1–M15. Много сделок, быстрые решения.</li>
+        <li><b>Дневной трейдер</b> — M15–H1. Несколько сделок в день.</li>
+        <li><b>Свинг-трейдер</b> — H4–D1. 1–5 сделок в неделю.</li>
+        <li><b>Инвестор</b> — W1–MN. Долгосрочные позиции.</li>
+      </ul>
+
+      <div class="tip green">
+        <span class="tip-title">💡 Совет новичку</span>
+        Начинайте с H1 и H4. На минутных таймфреймах слишком много шума и ложных сигналов,
+        а на дневных — слишком мало сделок для быстрого обучения.
+      </div>
+
+      <h2>Мультитаймфреймовый анализ</h2>
+      <p>
+        Профессиональные трейдеры смотрят на <b>несколько таймфреймов одновременно</b>:
+      </p>
+      <ol>
+        <li><b>Старший ТФ</b> (D1 или H4) — определяем главный тренд.</li>
+        <li><b>Средний ТФ</b> (H1) — ищем зону для входа.</li>
+        <li><b>Младший ТФ</b> (M15 или M5) — ищем точку входа по паттерну.</li>
+      </ol>
+      <p>
+        Такой подход даёт лучшее соотношение риска и прибыли.
+      </p>
+
+      <div class="tip warning">
+        <span class="tip-title">⚠️ Частая ошибка</span>
+        Смотреть только на один таймфрейм. Например, на M5 можно увидеть «разворот»,
+        который на H4 — просто откат в рамках сильного тренда.
+      </div>
+
+      <div class="tip gold">
+        <span class="tip-title">🏆 Совет дня</span>
+        Откройте график одного и того же актива на M15, H1 и H4. Сравните картинку.
+        Скорее всего, вы увидите разные «тренды». Это поможет понять, почему нужен
+        мультитаймфреймовый анализ.
+      </div>
+
+      <h2>Что важно уяснить из урока</h2>
+      <ul>
+        <li>Таймфрейм — время, за которое формируется одна свеча.</li>
+        <li>Разные таймфреймы — для разных стилей торговли.</li>
+        <li>Новичку лучше начинать с H1–H4.</li>
+        <li>Профессионалы смотрят 3 таймфрейма одновременно.</li>
+      </ul>
+
+    </article>
+
+    <section class="quiz-block">
+      <h2>📝 Мини-тест по уроку</h2>
+      <p class="quiz-intro">Ответьте на 4 вопроса, чтобы закрепить материал.</p>
+
+      <form id="quizForm">
+        <fieldset class="quiz-question">
+          <legend>1. Что такое таймфрейм?</legend>
+          <label class="answer"><input type="radio" name="q1" value="a"> Время, за которое формируется одна свеча</label>
+          <label class="answer"><input type="radio" name="q1" value="b"> Скорость интернета</label>
+          <label class="answer"><input type="radio" name="q1" value="c"> Размер депозита</label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>2. Какой таймфрейм подходит скальперу?</legend>
+          <label class="answer"><input type="radio" name="q2" value="a"> D1</label>
+          <label class="answer"><input type="radio" name="q2" value="b"> M1–M15</label>
+          <label class="answer"><input type="radio" name="q2" value="c"> W1</label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>3. Что такое мультитаймфреймовый анализ?</legend>
+          <label class="answer"><input type="radio" name="q3" value="a"> Торговля на одном ТФ</label>
+          <label class="answer"><input type="radio" name="q3" value="b"> Анализ на нескольких ТФ одновременно</label>
+          <label class="answer"><input type="radio" name="q3" value="c"> Использование 10 индикаторов</label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>4. С какого таймфрейма лучше начинать новичку?</legend>
+          <label class="answer"><input type="radio" name="q4" value="a"> M1</label>
+          <label class="answer"><input type="radio" name="q4" value="b"> H1–H4</label>
+          <label class="answer"><input type="radio" name="q4" value="c"> MN</label>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary btn-block">Проверить ответы</button>
+        <div class="quiz-result" id="quizResult" aria-live="polite"></div>
+        <button type="button" class="btn btn-success btn-block" id="retryQuizBtn" style="display:none;margin-top:10px">Попробовать ещё раз</button>
+      </form>
+    </section>
+
+    <button type="button" class="btn btn-success btn-block" id="completeBtn" style="margin-bottom:20px">Отметить урок пройденным</button>
+
+    <div class="lesson-nav-bottom">
+      <a href="lesson-4.html">
+        <small>← Предыдущий</small>
+        <strong>Урок 4. Тренд и его виды</strong>
+      </a>
+      <a href="lesson-6.html" class="next">
+        <small>Следующий →</small>
+        <strong>Урок 6. Индикаторы</strong>
+      </a>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p style="margin:0 0 6px"><b>Углублённый курс для новичков</b> · Учебный мини-сайт</p>
+      <p style="margin:0;font-size:11px;opacity:.75">Материал предназначен для образовательных целей и не является инвестиционной рекомендацией.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" type="button" aria-label="Наверх">↑</button>
+
+  <script>
+    window.QUIZ_ANSWERS = { q1: "a", q2: "b", q3: "b", q4: "b" };
+  </script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

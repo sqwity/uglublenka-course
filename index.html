@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1728">
+  <meta name="description" content="Углублённый курс для новичков — 10 уроков по трейдингу с нуля: свечи, уровни, тренды, работа на бирже FxPro, шорт и лонг, риск-менеджмент.">
+  <title>Углублённый курс для новичков</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ============================================
+       ВЕРХНЯЯ ПАНЕЛЬ
+       ============================================ -->
+  <header class="top-bar">
+    <div class="container top-bar-inner">
+      <a href="index.html" class="top-bar-logo">
+        <span class="top-bar-logo-icon">📈</span>
+        <span>Углублённый курс</span>
+      </a>
+
+      <div class="top-bar-actions">
+        <span class="top-bar-progress" id="topBarProgress">0/10</span>
+        <button class="theme-toggle" type="button" aria-label="Переключить тему">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================
+       ШАПКА (HERO)
+       ============================================ -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="eyebrow">
+        <span class="eyebrow-dot"></span>
+        Курс для начинающих трейдеров
+      </div>
+
+      <h1>Углублённый курс для новичков</h1>
+
+      <p class="hero-description">
+        10 больших уроков, которые проведут вас от полного нуля до уверенного понимания рынка.
+        Свечи, уровни, тренды, индикаторы, работа на бирже FxPro, шорт и лонг, риск-менеджмент
+        и психология трейдинга — всё по шагам, с примерами и тестами.
+      </p>
+
+      <div class="hero-tags">
+        <a href="#lessons-section">📚 10 уроков</a>
+        <a href="#achievements-section">🏆 Достижения</a>
+        <a href="#certificate-section">📜 Сертификат</a>
+        <a href="#lessons-section">🚀 Начать обучение</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ОСНОВНОЙ КОНТЕНТ
+       ============================================ -->
+  <main class="container">
+
+    <!-- Прогресс курса -->
+    <section class="progress-card reveal" aria-label="Прогресс курса">
+      <div class="progress-top">
+        <strong>Ваш прогресс</strong>
+        <span id="progressText">0 из 10 уроков</span>
+      </div>
+      <div class="progress-track">
+        <i class="progress-fill" id="progressFill"></i>
+      </div>
+    </section>
+
+    <!-- Заголовок сетки уроков -->
+    <div class="section-heading" id="lessons-section">
+      <h2>Программа курса</h2>
+      <span>10 уроков · пошаговое обучение</span>
+    </div>
+
+    <!-- Сетка 10 уроков -->
+    <div class="lessons-grid" id="lessonsGrid">
+      <!-- Карточки рендерятся через JS из window.LESSONS_DATA -->
+    </div>
+
+    <!-- Заголовок достижений -->
+    <div class="section-heading" id="achievements-section">
+      <h2>Достижения</h2>
+      <span>Открывайте по мере прохождения</span>
+    </div>
+
+    <!-- Достижения -->
+    <section class="progress-card reveal" aria-label="Достижения">
+      <div class="achievements-grid" id="achievementsGrid">
+        <!-- Достижения рендерятся через JS -->
+      </div>
+    </section>
+
+    <!-- Заголовок сертификата -->
+    <div class="section-heading" id="certificate-section">
+      <h2>Сертификат</h2>
+      <span>Откроется после 10 урока</span>
+    </div>
+
+    <!-- Блок сертификата -->
+    <section class="completion-card reveal" id="certificatePreview">
+      <div class="completion-icon">📜</div>
+      <h2>Сертификат об окончании курса</h2>
+      <p>Пройдите все 10 уроков — и вы получите именной сертификат, который можно сохранить или распечатать.</p>
+      <a href="certificate.html" class="btn btn-gold">Посмотреть сертификат →</a>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       ПОДВАЛ
+       ============================================ -->
+  <footer>
+    <div class="container">
+      <p style="margin:0 0 6px">
+        <b>Углублённый курс для новичков</b> · Учебный мини-сайт
+      </p>
+      <p style="margin:0;font-size:11px;opacity:.75">
+        Материал предназначен для образовательных целей и не является инвестиционной рекомендацией.
+        Торговля связана с риском.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       КНОПКА "НАВЕРХ"
+       ============================================ -->
+  <button class="scroll-top" id="scrollTop" type="button" aria-label="Наверх">↑</button>
+
+  <!-- ============================================
+       ДАННЫЕ УРОКОВ
+       ============================================ -->
+  <script>
+    window.LESSONS_DATA = [
+      {
+        number: 1,
+        icon: "📚",
+        title: "Введение в трейдинг",
+        subtitle: "Что такое рынок, кто такие трейдеры, какие бывают активы"
+      },
+      {
+        number: 2,
+        icon: "🕯️",
+        title: "Японские свечи",
+        subtitle: "Тело, тени, бычьи и медвежьи свечи, базовые паттерны"
+      },
+      {
+        number: 3,
+        icon: "🚧",
+        title: "Уровни поддержки и сопротивления",
+        subtitle: "Как строить уровни и как реагировать на пробои"
+      },
+      {
+        number: 4,
+        icon: "📈",
+        title: "Тренд и его виды",
+        subtitle: "Восходящий, нисходящий, боковой. Смена тренда"
+      },
+      {
+        number: 5,
+        icon: "⏱️",
+        title: "Таймфреймы",
+        subtitle: "Какие бывают, как выбирать, мультитаймфреймовый анализ"
+      },
+      {
+        number: 6,
+        icon: "📊",
+        title: "Индикаторы",
+        subtitle: "MA, RSI, MACD, объёмы — базовые инструменты анализа"
+      },
+      {
+        number: 7,
+        icon: "💱",
+        title: "Работа на бирже FxPro. Шорт и лонг",
+        subtitle: "Как открывать сделки, что такое шорт и лонг"
+      },
+      {
+        number: 8,
+        icon: "🎯",
+        title: "Практика: разбор реальной сделки",
+        subtitle: "От анализа графика до закрытия позиции"
+      },
+      {
+        number: 9,
+        icon: "🛡️",
+        title: "Управление рисками",
+        subtitle: "Стоп-лосс, тейк-профит, риск на сделку, мани-менеджмент"
+      },
+      {
+        number: 10,
+        icon: "🧠",
+        title: "Психология и стратегия",
+        subtitle: "Дисциплина, журнал сделок, построение торговой системы"
+      }
+    ];
+  </script>
+
+  <!-- ============================================
+       ОБЩИЙ СКРИПТ
+       ============================================ -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

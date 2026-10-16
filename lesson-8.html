@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1728">
+  <meta name="description" content="Урок 8. Практика: разбор реальной сделки — от анализа графика до закрытия позиции.">
+  <title>Урок 8. Практика: разбор реальной сделки — Углублённый курс</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-lesson-number="8">
+
+  <header class="top-bar">
+    <div class="container top-bar-inner">
+      <a href="index.html" class="top-bar-logo">
+        <span class="top-bar-logo-icon">📈</span>
+        <span>Углублённый курс</span>
+      </a>
+      <div class="top-bar-actions">
+        <span class="top-bar-progress" id="topBarProgress">0/10</span>
+        <button class="theme-toggle" type="button" aria-label="Переключить тему">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-narrow">
+
+    <div class="lesson-nav-top">
+      <a href="lesson-7.html">← Урок 7</a>
+      <span class="lesson-counter">Урок 8 из 10</span>
+      <a href="lesson-9.html" class="next">Далее →</a>
+    </div>
+
+    <div class="lesson-header">
+      <div class="lesson-header-icon">🎯</div>
+      <h1>Практика: разбор реальной сделки</h1>
+      <p>Соединяем всё, что изучили: уровни, свечи, тренд, индикаторы — в одной сделке.</p>
+    </div>
+
+    <article class="lesson-content-card">
+
+      <h2>Сценарий сделки</h2>
+      <p>
+        Представим, что мы торгуем золото (XAUUSD) на таймфрейме H1. Цена находится
+        в районе 4180–4200. Наша задача — найти точку входа на продажу (шорт) по
+        тренду и с хорошим соотношением риск/прибыль.
+      </p>
+
+      <h2>Шаг 1. Анализ старшего таймфрейма (D1)</h2>
+      <p>
+        На дневном графике видим, что цена сделала несколько попыток пробить уровень
+        4200 и не смогла. Это сильное сопротивление. Тренд — боковой с наклоном вниз.
+        Предпочтение отдаём продажам.
+      </p>
+
+      <div class="lesson-image-wrap">
+        <img src="images/course-18.jpg"
+             alt="Дневной график XAUUSD с зонами и направлением движения"
+             loading="lazy"
+             onerror="this.parentElement.style.display='none'">
+        <div class="lesson-image-caption">Шаг 1. Дневной график — определяем главный тренд и ключевые зоны</div>
+      </div>
+
+      <h2>Шаг 2. Анализ среднего таймфрейма (H1)</h2>
+      <p>
+        На часовом графике цена подходит к зоне сопротивления 4195–4200. Здесь ранее
+        уже было 3 касания. Это подтверждает силу уровня.
+      </p>
+
+      <div class="lesson-image-wrap">
+        <img src="images/course-19.jpg"
+             alt="Часовой график с несколькими касаниями сопротивления"
+             loading="lazy"
+             onerror="this.parentElement.style.display='none'">
+        <div class="lesson-image-caption">Шаг 2. Часовой график — несколько касаний уровня сопротивления</div>
+      </div>
+
+      <h2>Шаг 3. Ждём сигнал</h2>
+      <p>Что мы ищем:</p>
+      <ul>
+        <li>Разворотную свечу (молот, поглощение) у уровня 4195–4200.</li>
+        <li>Дивергенцию RSI (цена делает новый максимум, RSI — нет).</li>
+        <li>Снижение объёма на подходе к уровню.</li>
+      </ul>
+
+      <h2>Шаг 4. Точка входа</h2>
+      <p>
+        Допустим, сформировалось медвежье поглощение у 4197. Открываем <b>шорт</b>
+        по цене <b>4195</b>.
+      </p>
+
+      <h2>Шаг 5. Стоп-лосс и тейк-профит</h2>
+      <ul>
+        <li><b>Стоп-лосс</b>: 4205 (за уровнем сопротивления + запас 8 пунктов). Риск — 10 пунктов.</li>
+        <li><b>Тейк-профит 1</b>: 4175 (первая поддержка).</li>
+        <li><b>Тейк-профит 2</b>: 4150 (более сильная поддержка).</li>
+        <li><b>Тейк-профит 3</b>: 4120 (глубокая цель).</li>
+      </ul>
+
+      <div class="lesson-image-wrap">
+        <img src="images/course-20.jpg"
+             alt="График M15 с зонами, стрелкой вниз и уровнями SL и TP"
+             loading="lazy"
+             onerror="this.parentElement.style.display='none'">
+        <div class="lesson-image-caption">Шаг 5. Уровни стоп-лосса и тейк-профита на графике</div>
+      </div>
+
+      <h2>Шаг 6. Соотношение риск/прибыль</h2>
+      <p>
+        Риск — 10 пунктов. Потенциальная прибыль до TP1 — 20 пунктов. Соотношение 1:2.
+        До TP2 — 45 пунктов (1:4.5). Отличный сетап.
+      </p>
+
+      <div class="tip green">
+        <span class="tip-title">💡 Ключевая идея</span>
+        Хорошая сделка — это не «угадать направление». Это сделка с <b>чётким планом</b>:
+        где вход, где стоп, где тейки, и с соотношением риск/прибыль минимум 1:2.
+      </div>
+
+      <h2>Шаг 7. Сопровождение сделки</h2>
+      <p>Когда цена ушла в плюс на 20 пунктов:</p>
+      <ul>
+        <li>Переводим стоп-лосс в безубыток (по цене входа 4195).</li>
+        <li>Часть позиции (например, 50%) закрываем на TP1.</li>
+        <li>Остаток держим до TP2 или TP3, подтягивая стоп.</li>
+      </ul>
+
+      <h2>Шаг 8. Итог сделки</h2>
+      <p>
+        Допустим, цена дошла до 4150 (TP2). Итог:
+      </p>
+      <ul>
+        <li>50% позиции закрыто на 4175 — прибыль 20 пунктов.</li>
+        <li>50% позиции закрыто на 4150 — прибыль 45 пунктов.</li>
+        <li>Средний результат: 32.5 пункта прибыли при риске 10 пунктов.</li>
+      </ul>
+
+      <div class="lesson-image-wrap">
+        <img src="images/course-21.jpg"
+             alt="График M15 с отмеченными точками входа, стопа и тейк-профитов"
+             loading="lazy"
+             onerror="this.parentElement.style.display='none'">
+        <div class="lesson-image-caption">Шаг 8. Итог сделки — цена прошла все отмеченные цели</div>
+      </div>
+
+      <div class="tip gold">
+        <span class="tip-title">🏆 Что важно запомнить</span>
+        Сделка была успешной не потому, что мы «угадали». А потому что:
+        <b>1)</b> работали по тренду старшего ТФ,
+        <b>2)</b> дождались сигнала у сильного уровня,
+        <b>3)</b> правильно рассчитали риск,
+        <b>4)</b> сопровождали сделку по плану.
+      </div>
+
+      <h2>Что важно уяснить из урока</h2>
+      <ul>
+        <li>Перед сделкой всегда есть план: вход, стоп, тейки.</li>
+        <li>Риск/прибыль минимум 1:2.</li>
+        <li>Перевод стопа в безубыток — обязательный шаг.</li>
+        <li>Частичное закрытие позиции снижает риск.</li>
+        <li>Работаем по тренду старшего таймфрейма.</li>
+      </ul>
+
+    </article>
+
+    <section class="quiz-block">
+      <h2>📝 Мини-тест по уроку</h2>
+      <p class="quiz-intro">Ответьте на 4 вопроса, чтобы закрепить материал.</p>
+
+      <form id="quizForm">
+        <fieldset class="quiz-question">
+          <legend>1. Какой минимальный риск/прибыль считается хорошим?</legend>
+          <label class="answer"><input type="radio" name="q1" value="a"> 1:1</label>
+          <label class="answer"><input type="radio" name="q1" value="b"> 1:2</label>
+          <label class="answer"><input type="radio" name="q1" value="c"> 1:0.5</label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>2. Что делать, когда цена ушла в плюс на 20+ пунктов?</legend>
+          <label class="answer"><input type="radio" name="q2" value="a"> Открыть ещё одну сделку</label>
+          <label class="answer"><input type="radio" name="q2" value="b"> Перевести стоп в безубыток</label>
+          <label class="answer"><input type="radio" name="q2" value="c"> Сразу закрыть всю позицию</label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>3. Зачем нужно частичное закрытие позиции?</legend>
+          <label class="answer"><input type="radio" name="q3" value="a"> Чтобы снизить риск и зафиксировать часть прибыли</label>
+          <label class="answer"><input type="radio" name="q3" value="b"> Чтобы увеличить комиссию</label>
+          <label class="answer"><input type="radio" name="q3" value="c"> Это не нужно</label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>4. На каком таймфрейме определяем главный тренд?</legend>
+          <label class="answer"><input type="radio" name="q4" value="a"> На младшем (M5)</label>
+          <label class="answer"><input type="radio" name="q4" value="b"> На старшем (D1, H4)</label>
+          <label class="answer"><input type="radio" name="q4" value="c"> На минутном (M1)</label>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary btn-block">Проверить ответы</button>
+        <div class="quiz-result" id="quizResult" aria-live="polite"></div>
+        <button type="button" class="btn btn-success btn-block" id="retryQuizBtn" style="display:none;margin-top:10px">Попробовать ещё раз</button>
+      </form>
+    </section>
+
+    <button type="button" class="btn btn-success btn-block" id="completeBtn" style="margin-bottom:20px">Отметить урок пройденным</button>
+
+    <div class="lesson-nav-bottom">
+      <a href="lesson-7.html">
+        <small>← Предыдущий</small>
+        <strong>Урок 7. Работа на бирже FxPro. Шорт и лонг</strong>
+      </a>
+      <a href="lesson-9.html" class="next">
+        <small>Следующий →</small>
+        <strong>Урок 9. Управление рисками</strong>
+      </a>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p style="margin:0 0 6px"><b>Углублённый курс для новичков</b> · Учебный мини-сайт</p>
+      <p style="margin:0;font-size:11px;opacity:.75">Материал предназначен для образовательных целей и не является инвестиционной рекомендацией.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" type="button" aria-label="Наверх">↑</button>
+
+  <script>
+    window.QUIZ_ANSWERS = { q1: "b", q2: "b", q3: "a", q4: "b" };
+  </script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
